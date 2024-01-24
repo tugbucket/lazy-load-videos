@@ -2,8 +2,9 @@
 Plays and pauses videos when entering and leaving the viewport. Can also load videos when entering the viewport.
 
 ## Shortcode options
-[lazyloadvideos pauseonscroll="yes"]
-the parameters are _yes_ and _no_
+`[lazyloadvideos pauseonscroll="yes"]`
+
+The parameters are _yes_ and _no_
 
 By default it’s set to _yes_. The videos should start playing when you scroll into view and pause when scrolling out of view. 
 If set to _no_, the videos start playing when scrolled into view and do not pause after scrolling out of view.

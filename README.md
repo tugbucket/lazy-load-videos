@@ -13,9 +13,9 @@ If set to _no_, the videos start playing when scrolled into view and do not paus
 To lazy load the videos, meaning only loading them when scrolled into view, you have to alter your HTML video tag. 
 
 For example:
-`<video class="elementor-video" src="<path to your video>" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload" played="true"></video>`
+`<video src="<path to your video>"></video>`
 
 Change that to:
-`<video class="elementor-video" data-src="<path to your video>" autoplay="" loop="" muted="muted" playsinline="" controlslist="nodownload" played="true"></video>`
+`<video data-src="<path to your video>"></video>`
 
 Note that the new HTML does not contain an src attribute and it now says data-src.

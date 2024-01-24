@@ -8,6 +8,9 @@
 
 		return elementBottom > viewportTop && elementTop < viewportBottom;
 	};
+	$.fn.hasAttr = function(name) {  
+	   return this.attr(name) !== undefined;
+	};
 
 	$(document).ready(function() {
 
@@ -20,8 +23,12 @@
 		setInterval(function(llvData) {
 			$("video").each(function(){
 				var played = $(this).attr("played");
+				var src = $(this).attr("data-src");
 				if(llvData != "no"){
 					if ($(this).isInViewport()) {
+						if(!$(this).hasAttr('src')) {
+							$(this).attr("src",src);
+						}
 						if (played == "false") { 
 							$(this)[0].play();
 							$(this).attr("played", "true");  
